@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="full_wrapper">
+        <div class="main_wrapper">
+            <form name="form">
+                <div class="display">
+                    <input type="text" placeholder="0" disabled name="display">
+                </div>
+                <div class="btn">
+                    <div class="btn_item">
+                        <input type="button" value="AC" onclick="display.value = null">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="DEL" onclick="form.display.value = form.display.value.slice(0, -1)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="%" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="*" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="7" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="8" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="9" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="/" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="4" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="5" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="6" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="-" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="1" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="2" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="3" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="+" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="0" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="00" onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="." onclick="calculate(this.value)">
+                    </div>
+                    <div class="btn_item">
+                        <input type="button" value="=" onclick="form.display.value = eval(form.display.value)">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    <script>
+        function calculate(data){
+            form.display.value= form.display.value+data;
+        }
+        
+            
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+</html>
